@@ -1,0 +1,79 @@
+.mainpage {
+  display: grid;
+  background-color: rgb(253, 239, 218);
+  grid-template-columns: 1fr 1fr 300px 1fr;  
+  grid-template-rows: 70px 80px auto auto 290px;
+  grid-template-areas:"h h h h"
+                      "n n n n"
+                      "s s s s"
+                      "m m m m"
+                      "fo fo fo fo";
+  margin: 50px 5%;
+  border-top: 30px solid rgb(204, 180, 147);
+  border-radius: 15px;
+  border: 3px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 4px 0px rgba(84, 84, 84, 0.48), 0px 3px 11px 1px rgba(90, 90, 90, 0.54);
+}
+
+section {
+  grid-area: s;
+  column-count : 2;
+}
+  
+figure {
+  text-align: center;
+}
+
+figcaption{
+  font-size: 1.5em;
+  margin: 5px auto;
+  border-bottom-style: double;
+  border-bottom-color: rgb(204, 180, 147);
+  padding-bottom: 7px;
+  color:rgb(58, 60, 153);
+}
+  
+figure img {
+  border: 1px solid   rgb(204, 180, 147);
+}
+  
+video {
+  margin-top: 80px;
+  width: unset;
+  height: 300px;
+  border: 2px solid   rgb(136, 120, 98);
+  background-color:rgb(204, 180, 147);
+}
+
+div {
+  grid-area: d;
+  text-align: center;
+}
+
+main {
+  grid-area: m;
+  background-color: rgb(255, 252, 242);
+  border: 1px solid #be290e;
+  border-top: 25px solid #be290e;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 40px;
+  column-count : 2;
+  column-gap: 60px;
+}
+
+main p {
+  text-align: justify;
+  color:  #5a4e3c;
+}
+
+main h4{
+  color: rgb(58, 60, 153);
+  margin: 0;
+  font-size: 18px;
+}
+
+main span {
+  color: rgb(9, 144, 5);
+}
+

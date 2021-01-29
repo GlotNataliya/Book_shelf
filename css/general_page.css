@@ -1,0 +1,294 @@
+html {
+    background-image: url(../img/oboi1.png);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    background-color: #be290e ;
+    border-radius: 15px 15px 0 0;
+}
+
+.logo img {
+  transition: all 1s ease;
+  border-radius: 15px 0 0 0;
+}
+
+.logo img:hover{
+    opacity: 0.3;
+}
+
+header h5 {
+  font: 22px 'Ledger', serif;
+  color: rgb(253, 239, 218);
+  margin: 20px 0 35px 0px;
+  letter-spacing: 5px;
+}
+
+.c_i-block a {  
+  color:rgb(253, 239, 218); 
+  font-size: 24px; 
+  margin-left: 30px;
+}
+
+/* search start */
+.search {
+  grid-area: f;
+  position: relative;
+  width: 300px;
+  background:rgb(253, 239, 218);
+  margin: 15px 0px 15px 0;
+  border-radius: 5px;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    color:rgb(136, 120, 98);
+    font: 18px/1.5  Georgia,'Times New Roman', Times, serif;
+}
+
+button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+button:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #be290e;
+}
+/* search end */
+
+h3 {
+  text-align: end;
+  padding-right: 30px;
+  margin-top: 25px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: rgb(253, 239, 218);
+
+}
+
+h3 a:hover   {
+color: #5a4e3c;
+}
+
+/*------------- animation start-------------------*/
+* {
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav {
+    grid-area: n;
+    width: 880px;
+    margin: 20px auto;
+    z-index: 1;
+  }
+  
+  .main > li {
+    margin: 0 2%;
+    float: left;
+  }
+  
+  .main li a {
+    display: inline;
+    text-decoration: none;
+    color: #be290e;
+    font: 20px/1 Arial,'Times New Roman', Times, serif;
+    padding: 10px 5px;
+    transition: .5s ease-in-out;
+  }
+  
+  .drop {
+    position: absolute;
+  }
+  
+  .drop li {
+    opacity: 0;
+    margin: 5px;
+  }
+  
+  .drop li a {
+    padding: 10px 0;
+  }
+  
+  .main li:hover .menu2 li:first-of-type {
+    animation: menu2 .3s ease-in-out forwards;
+    animation-delay: .3s;
+    margin-left: 5px;
+  }
+  
+  .main li:hover .menu2 li:nth-of-type(2) {
+    animation: menu2 .3s ease-in-out forwards;
+    animation-delay: .6s;
+    margin-left: 5px;
+  }
+  
+  .main li:hover .menu2 li:nth-of-type(3) {
+    animation: menu2 .3s ease-in-out forwards;
+    animation-delay: .9s;
+    margin-left: 5px;
+  }
+  
+  .main li:hover .menu2 li:last-of-type {
+    animation: menu2 .3s ease-in-out forwards;
+    animation-delay: 1.2s;
+    margin-left: 5px;
+  }
+  
+  @keyframes menu2 {
+    0% {
+      opacity: 0;
+      transform: scale(.7);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /*------------- animation end-------------------*/
+/*------------- masterpieces, screened_books start-------------------*/
+  .name {
+    grid-area: d;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .names {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#be290e;
+    margin: 5px 0 5px 0;
+  }
+
+  .book_image { 
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 10px;
+    margin-top: 30px;
+  }
+  
+  .book_image li {
+    background-color: rgb(255, 252, 242);
+    border: 1px solid  rgb(204, 180, 147);
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .book_image li h2:first-line {
+    font-size: 16px;
+  }
+  
+  .book_image li .fa, figure .fa {
+    color: #be290e;
+  }
+  
+  .book_image li p {
+    font: 12px/1.5 Arial, Verdana, Tahoma, sans-serif;
+    margin: 0 5px;
+    line-height: 1;
+    text-align: justify;
+    color: #5a4e3c;
+  }
+  
+  .book_image li img {
+    width: 80%;
+    border: 1px solid  rgb(136, 120, 98);
+    margin: 10px;
+  }
+  
+  .book_image li img:hover {
+    opacity: 0.7;
+  }
+  
+  a, img { 
+    outline: none; 
+  }
+
+  .page {
+    text-decoration: none;
+  }
+
+  .book_name {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font: 12px  Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+  }
+  
+  .book_name a {
+    color:rgb(58, 60, 153);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .book_name a:hover {
+    color: #be290e;
+  }
+  
+/*------------- masterpieces, screened_books end-------------------*/
+/*------------- footer start-------------------*/
+  footer {
+    grid-area: fo;
+    text-align:  center;
+    border: 2px solid rgb(253, 239, 218);
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(204, 180, 147);
+  }
+  
+  p.footer__social-icons {
+    color: #FFF;
+    font-size: 32px;
+   }
+  
+   p.footer__social-icons a {
+    color:  #5a4e3c;
+    text-decoration: none;
+    margin-right: 30px;
+   }
+  
+   p.footer__social-icons a:last-child {
+    margin-right: 0px;
+     
+   }
+   
+   p.footer__social-icons a:hover {
+    color:  rgb(121, 121, 121);
+   }
+  
+   p.footer__name {
+    font: 18px/1.5 Arial, Verdana, Tahoma, sans-serif;
+    color:  #5a4e3c;
+    margin-top: 40px;
+   }
+/*------------- footer end-------------------*/
+  

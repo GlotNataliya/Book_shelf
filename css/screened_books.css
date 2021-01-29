@@ -1,0 +1,69 @@
+.firstpage {
+    display: grid;
+    background-color: rgb(253, 239, 218);
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 70px 70px auto auto auto 290px;
+    grid-template-areas:"h h h h"
+                        "n n n n"
+                        "s s s s"
+                        "d d d d"
+                        "m m m m"
+                        "fo fo fo fo";
+    margin: 50px 5%;
+    border-radius: 15px;
+    border: 3px solid rgb(255, 255, 255); 
+    box-shadow: 0px 0px 4px 0px rgba(84, 84, 84, 0.48), 0px 3px 11px 1px rgba(90, 90, 90, 0.54);
+  }
+  
+section {
+  grid-area: s;
+  display: flex;
+}
+  
+figure {
+ width: 45%;
+}
+  
+figcaption{
+  font-size: 1.5em;
+  margin: 5px auto;
+  text-align: center;
+  border-bottom-style: double;
+  border-bottom-color: rgb(204, 180, 147);
+  padding-bottom: 7px;
+  color:rgb(58, 60, 153);
+}
+  
+figure img {
+  float: left; 
+  margin: 20px 20px 20px 0;
+  border: 1px solid   rgb(204, 180, 147);
+}
+  
+figure img:hover {
+  opacity: 0.7;
+}
+  
+figure p {
+  font: 1em Georgia, 'Times New Roman', Times, serif;
+  line-height: 2;
+  text-align: justify;
+  color:  #5a4e3c;
+}
+  
+video {
+  margin-top: 90px;
+  -webkit-border:  2px solid rgb(136, 120, 98);
+  border: 2px solid rgb(136, 120, 98);
+  width: unset;
+  height: 300px;
+  max-width: 500px;
+}
+
+
+
+  
+  
+
+
+    

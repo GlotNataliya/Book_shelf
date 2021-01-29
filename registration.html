@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/registration.css" type="text/css">
+      <link rel="stylesheet" href="css/general_page.css" type="text/css">
+      <link rel="shortcut icon" href="../bookshelf/img/favicon.ico" type="image/x-icon">
+      <title>Document</title>
+    </head>
+       <body>
+          <fieldset>
+            <form action="#" method="POST">
+                <h1>Регистрация</h1>
+                 <div><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+                    <input type="file"  id="image" name="image" accept=".jpg, .jpeg, .png" value=""></div><br>
+                    <label>Ф.И.О.<input type="text" required placeholder="Пользователь" maxlength="15" size="57" name="name"></label><br>
+                    <label>E-mail:</label><input type="email" required placeholder="Email" maxlength="15" size="57" name="login">
+                    <label>Повторите E-mail:</label><input type="email" required placeholder="Email" maxlength="15" size="57" name="login"><br>
+                    <label>Пароль:</label><input type="password" required placeholder="Пароль" maxlength="15" size="57" name="password">
+                    <label>Повторите пароль:</label><input type="password" required placeholder="Пароль" maxlength="15" size="57" name="password">
+                    <label>Пол:<input  id="checkbox" type="radio" name="sex" value="мужской">мужской</label>
+                    <label><input id="checkbox" type="radio" name="sex" value="женский">женский<br>
+                    <label><input  id="checkbox" type="checkbox">Я хочу получать сообщения и предложения</label><br>
+                    <input  id="submit" type="submit" value="Отправить">
+                    <h2><a href="../bookshelf/authorization.html">Авторизация</a></h2>
+             </form>  
+          </fieldset>    
+       </body>
+</html>

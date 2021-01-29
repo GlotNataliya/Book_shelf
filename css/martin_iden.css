@@ -1,0 +1,67 @@
+
+  .mainpage {
+    display: grid;
+    background-color: rgb(253, 239, 218);
+    grid-template-rows: 70px 80px auto auto 290px;
+    grid-template-areas:"h h h h"
+                        "n n n n"
+                        "f f f f"
+                        "m m m m"
+                        "fo fo fo fo";
+    margin: 50px 5%;
+    border-top: 30px solid rgb(204, 180, 147);
+    border-radius: 15px;
+    border: 3px solid rgb(255, 255, 255); 
+    box-shadow: 0px 0px 4px 0px rgba(84, 84, 84, 0.48), 0px 3px 11px 1px rgba(90, 90, 90, 0.54);
+  }
+  
+  header h5 {
+  font: 22px 'Ledger', serif;
+  color: rgb(253, 239, 218);
+  margin: 20px 0 35px -100px;
+  letter-spacing: 5px;
+  }
+  
+  figure {
+    grid-area: f;
+    text-align: center;
+    }
+    
+  figcaption{
+    font-size: 2em;
+    color:rgb(58, 60, 153);
+    margin-bottom: 30px;
+  }
+    
+  figure img {
+    border: 1px solid   rgb(204, 180, 147);
+  }
+  
+  main {
+    grid-area: m;
+    background-color: rgb(255, 252, 242);
+    border: 1px solid #be290e;
+    border-top: 25px solid #be290e;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 40px;
+    column-count : 2;
+    column-gap: 60px;
+  }
+  
+  main p {
+    text-align: justify;
+    color:  #5a4e3c;
+  }
+  
+  main h4{
+    color: rgb(58, 60, 153);
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  main span {
+    color: rgb(9, 144, 5);
+  }
+  
+  
